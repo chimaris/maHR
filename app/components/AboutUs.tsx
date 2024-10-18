@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
 							</h2>
 							<div className="w-[100px] md:w-[150px] h-[1px] bg-[#2A2A2A]" />
 						</div>
-						<h1 className="text-3xl md:text-5xl font-semibold leading-[40px] md:leading-[60px] md:mb-6">
+						<h1 className="text-2xl md:text-4xl font-semibold leading-[40px] md:leading-[60px] md:mb-6">
 							Get to Know Us <span className="text-gd">Better</span>
 						</h1>
 						<p className="text-base md:text-lg mb-6">

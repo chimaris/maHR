@@ -15,8 +15,8 @@ const Services: React.FC = () => {
 					</h2>
 					<div className="w-[80px] md:w-[180px] h-[1px] bg-[#2A2A2A]" />
 				</div>
-				<p className="my-8 w-[90%] md:w-[50%] text-center text-xl md:text-3xl font-semibold mx-auto">
-					Our <span className="text-gd">services</span> are tailored to meet the unique needs of each client.
+				<p className="my-8 w-[90%] md:w-[47%] text-center text-3xl md:text-4xl font-semibold mx-auto">
+					Our services are tailored to meet the <span className="text-gd">unique</span> needs of each client.
 				</p>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left">
 					<div className="p-6 shadow-lg text-white rounded-[20px] bg-[#0056B3] flex flex-col gap-4 md:gap-[16px]">
