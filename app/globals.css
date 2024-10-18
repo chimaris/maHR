@@ -1,3 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #2a2a2a;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.logo {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.background {
+	background: #edeef8;
+}
+
+.text-gd {
+	background: linear-gradient(270deg, #f6731f 5.08%, #0056b3 99.41%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+	line-height: 60px;
+	border: none;
+}
+
+.rectangle-4 {
+	width: 606.479px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(250px);
+}
+
+.rectangle-9 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-87.664deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #34c1fe;
+	filter: blur(200px);
+}
+
+.rectangle-10 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-87.664deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: rgba(246, 205, 23, 0.5);
+	filter: blur(250px);
+}
+
+.rectangle-6 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(250px);
+}
+
+.rectangle-5 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #34c1fe;
+	filter: blur(200px);
+}
+
+.rectangle-4-1 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: rgba(246, 205, 23, 0.5);
+	filter: blur(250px);
+}
+.rectangle-7 {
+	width: 606.479px;
+	height: 192px;
+	transform: rotate(92.336deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(250px);
+}
+.rectangle-8 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(92.336deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(250px);
+}
+.rectangle-7-1 {
+	width: 606.479px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(250px);
+}
+.rectangle-6-1 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #4c9aff;
+	filter: blur(300px);
+}
+
+.rectangle-8-1 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: #34c1fe;
+	filter: blur(200px);
+}
+.rectangle-9-1 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: rgba(246, 205, 23, 0.5);
+	filter: blur(250px);
+}
+.rectangle-13 {
+	width: 508px;
+	height: 192px;
+	transform: rotate(-66.262deg);
+	flex-shrink: 0;
+	border-radius: 44.729px;
+	background: rgba(246, 205, 23, 0.5);
+	filter: blur(250px);
+}
