@@ -7,7 +7,7 @@ import arrowRightIcon from "../../assets/icons/arrow-right.svg";
 const AboutUs: React.FC = () => {
 	return (
 		<section id="about" className="bg-transparent py-16 md:py-28  relative">
-			<div className="max-w-7xl mx-auto px-4 z-10 relative">
+			<div className="max-w-7xl mx-auto px-4 z-10 relative container">
 				{/* Flex container for responsiveness */}
 				<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
 					{/* Image section */}
