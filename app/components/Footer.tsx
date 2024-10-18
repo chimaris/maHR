@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 						</div>
 						<div className="w-full md:w-1/2">
 							<h3 className="md:text-[24px] font-medium text-[#000]">Address:</h3>
-							<p className="text-sm md:text-[16px] text-[#000]">No 1, Main Street, Abuja</p>
+							<p className="text-sm md:text-[16px] text-[#000]">No 1, Main Street, Awka, Anambra</p>
 						</div>
 					</div>
 

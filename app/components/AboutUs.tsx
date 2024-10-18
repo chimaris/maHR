@@ -1,22 +1,33 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
 import aboutImg from "../../assets/images/aboutus.png";
 import Button from "./UI/Button";
 import arrowRightIcon from "../../assets/icons/arrow-right.svg";
+import { motion, useInView } from "framer-motion";
 
 const AboutUs: React.FC = () => {
-	return (
-		<section id="about" className="bg-transparent py-16 md:py-28  relative">
-			<div className="max-w-7xl mx-auto px-4 z-10 relative container">
-				{/* Flex container for responsiveness */}
-				<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
-					{/* Image section */}
-					<div className="w-full md:w-1/2">
-						<Image src={aboutImg} width={506} height={609} alt="hero image" className="w-full h-auto" />
-					</div>
+	// Refs for the animated sections
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-					{/* Text section */}
-					<div className="w-full md:w-1/2 px-5">
+	return (
+		<section id="about" className="bg-transparent py-16 md:py-28 relative">
+			<div className="max-w-7xl mx-auto px-4 z-10 relative container">
+				<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10" ref={ref}>
+					<motion.div
+						initial={{ x: -100, opacity: 0 }}
+						animate={isInView ? { x: 0, opacity: 1 } : {}}
+						transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 100 }}
+						className="w-full md:w-1/2">
+						<Image src={aboutImg} width={506} height={609} alt="hero image" className="w-full h-auto" />
+					</motion.div>
+
+					<motion.div
+						initial={{ x: 100, opacity: 0 }}
+						animate={isInView ? { x: 0, opacity: 1 } : {}}
+						transition={{ duration: 0.6, delay: 0.3, type: "spring", stiffness: 100 }}
+						className="w-full md:w-1/2 px-5">
 						<div className="flex items-center gap-4 mb-4">
 							<div className="w-[100px] md:w-[150px] h-[1px] bg-[#2A2A2A]" />
 							<h2
@@ -30,9 +41,9 @@ const AboutUs: React.FC = () => {
 							Get to Know Us <span className="text-gd">Better</span>
 						</h1>
 						<p className="text-base md:text-lg mb-6">
-							<span className="logo">maHR</span> was founded in 2023 to match the right talent globally with companies. Founded with a vision to
-							redefine the way individuals connect with career paths and organizations build their dream teams, our journey is woven with the stories
-							of countless professionals and businesses that have found success through collaboration.
+							<span className="logo">maHR</span> consulting was founded in 2023 to match the right talent globally with companies. Founded with a
+							vision to redefine the way individuals connect with career paths and organizations build their dream teams, our journey is woven with
+							the stories of countless professionals and businesses that have found success through collaboration.
 						</p>
 
 						<div className="flex flex-col justify-around gap-10">
@@ -47,10 +58,10 @@ const AboutUs: React.FC = () => {
 						</div>
 
 						<Button className="flex gap-3 items-center mt-10">
-							<span className="text-base font-medium text-white">Start Here</span>
+							<span className="text-base font-medium text-white">Learn More</span>
 							<Image src={arrowRightIcon} width={16} height={16} alt="arrow right icon" />
 						</Button>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 
