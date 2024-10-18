@@ -127,4 +127,8 @@
 	.rectangle-13 {
 		display: none;
 	}
+
+	.background {
+		background: #fff;
+	}
 }
