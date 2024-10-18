@@ -4,7 +4,10 @@ Created an engaging human resource landing page using Next.js. The page included
 
 I utilized a color palette of blue, white, and slate for a fresh and modern look, and also make it responsive across all devices.
 
-![MaHR hero view](assets/images/maHR.png)
+![maHR](https://github.com/user-attachments/assets/3a43d14d-d2ca-4c35-9ba8-2b7408099f82)
+
+<img src="https://github.com/user-attachments/assets/3a43d14d-d2ca-4c35-9ba8-2b7408099f82.png" width=50% height=50%>
+
 
 ## Prerequisites
 
