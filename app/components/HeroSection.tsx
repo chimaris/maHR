@@ -4,7 +4,7 @@ import Image from "next/image";
 import heroImg from "../../assets/images/hero.png";
 import arrowRightIcon from "../../assets/icons/arrow-right.svg";
 import disneyLogo from "../../assets/images/disney.png";
-import fedexLogo from "../../assets/images/fedex.png";
+import fedexLogo from "../../assets/images/fedEx.png";
 import fordLogo from "../../assets/images/ford.png";
 import gapLogo from "../../assets/images/gap.png";
 import krogarLogo from "../../assets/images/kroger.png";
