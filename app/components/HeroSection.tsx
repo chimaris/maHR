@@ -25,8 +25,15 @@ const HeroSection: React.FC = () => {
 							Welcome to MaHR, the premier solution for finding great talent. Streamline your HR processes with our expert solutions.
 						</p>
 
-						<div className="w-full md:w-[392px] border border-[#2A2A2A] rounded-[30px] h-[59px] flex justify-between items-center gap-2 px-2 md:px-4">
+						{/* <div className="w-full md:w-[392px] border border-[#2A2A2A] rounded-[30px] h-[59px] flex justify-between items-center gap-2 px-2 md:px-4">
 							<input type="text" placeholder="Your Email" className="bg-transparent focus:outline-none focus:ring-0" />
+							<Button className="flex gap-3 items-center">
+								<span className="text-base font-medium text-white">Start Here</span>
+								<Image src={arrowRightIcon} width={16} height={16} alt="arrow right icon" />
+							</Button>
+						</div> */}
+						<div className="w-full md:w-[392px] border border-[#2A2A2A] rounded-[30px] h-[59px] flex justify-between items-center gap-2 px-2 md:px-3 overflow-hidden">
+							<input type="text" placeholder="Your Email" className="bg-transparent focus:outline-none focus:ring-0 flex-grow" />
 							<Button className="flex gap-3 items-center">
 								<span className="text-base font-medium text-white">Start Here</span>
 								<Image src={arrowRightIcon} width={16} height={16} alt="arrow right icon" />
