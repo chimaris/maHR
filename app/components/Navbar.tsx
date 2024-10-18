@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
 							Services
 						</a>
 
-						<a href="#contact" className="hover:text-slate-500">
+						<a href="#footer" className="hover:text-slate-500">
 							Contact
 						</a>
 					</div>

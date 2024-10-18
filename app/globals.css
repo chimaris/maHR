@@ -13,6 +13,7 @@
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	scroll-behavior: smooth;
 }
 
 .logo {
@@ -31,7 +32,6 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: 600;
-	line-height: 60px;
 	border: none;
 }
 
@@ -85,15 +85,6 @@
 	filter: blur(200px);
 }
 
-.rectangle-4-1 {
-	width: 508px;
-	height: 192px;
-	transform: rotate(-66.262deg);
-	flex-shrink: 0;
-	border-radius: 44.729px;
-	background: rgba(246, 205, 23, 0.5);
-	filter: blur(250px);
-}
 .rectangle-7 {
 	width: 606.479px;
 	height: 192px;
@@ -112,43 +103,7 @@
 	background: #4c9aff;
 	filter: blur(250px);
 }
-.rectangle-7-1 {
-	width: 606.479px;
-	height: 192px;
-	transform: rotate(-66.262deg);
-	flex-shrink: 0;
-	border-radius: 44.729px;
-	background: #4c9aff;
-	filter: blur(250px);
-}
-.rectangle-6-1 {
-	width: 508px;
-	height: 192px;
-	transform: rotate(-66.262deg);
-	flex-shrink: 0;
-	border-radius: 44.729px;
-	background: #4c9aff;
-	filter: blur(300px);
-}
 
-.rectangle-8-1 {
-	width: 508px;
-	height: 192px;
-	transform: rotate(-66.262deg);
-	flex-shrink: 0;
-	border-radius: 44.729px;
-	background: #34c1fe;
-	filter: blur(200px);
-}
-.rectangle-9-1 {
-	width: 508px;
-	height: 192px;
-	transform: rotate(-66.262deg);
-	flex-shrink: 0;
-	border-radius: 44.729px;
-	background: rgba(246, 205, 23, 0.5);
-	filter: blur(250px);
-}
 .rectangle-13 {
 	width: 508px;
 	height: 192px;

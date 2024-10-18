@@ -8,14 +8,14 @@ const Services: React.FC = () => {
 	return (
 		<section id="services" className="py-20 relative">
 			<div className="max-w-7xl mx-auto text-center px-4 container z-10 relative">
-				<div className="flex items-center gap-4 justify-center">
+				<div className="flex items-center gap-4 justify-center ">
 					<div className="w-[80px] md:w-[180px] h-[1px] bg-[#2A2A2A]" />
-					<h2 className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5" style={{ background: "rgba(255, 255, 255, 0.50)" }}>
+					<h2 className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5 whitespace-nowrap" style={{ background: "rgba(255, 255, 255, 0.50)" }}>
 						Our Services
 					</h2>
 					<div className="w-[80px] md:w-[180px] h-[1px] bg-[#2A2A2A]" />
 				</div>
-				<p className="mb-8 w-[90%] md:w-[50%] text-center text-xl md:text-3xl font-semibold mx-auto">
+				<p className="my-8 w-[90%] md:w-[50%] text-center text-xl md:text-3xl font-semibold mx-auto">
 					Our <span className="text-gd">services</span> are tailored to meet the unique needs of each client.
 				</p>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left">
@@ -25,7 +25,7 @@ const Services: React.FC = () => {
 							style={{ background: "rgba(255, 255, 255, 0.80)" }}>
 							<Image src={img1} alt="img" width={50} height={50} />
 						</div>
-						<h3 className="text-lg md:text-xl font-bold text-white text-[24px] md:text-[30px] font-medium leading-[36px] md:leading-[42px]">
+						<h3 className="text-lg md:text-xl font-bold text-white text-[24px] md:text-[30px] font-medium leading-[28px] md:leading-[32px]">
 							Talent <br /> Acquisition
 						</h3>
 						<p className="text-white text-sm md:text-base">We help you find the best talent to grow your organization.</p>
@@ -34,7 +34,7 @@ const Services: React.FC = () => {
 						<div className="rounded-full w-[60px] md:w-[70px] h-[60px] md:h-[70px] flex items-center justify-center bg-[#FEA334]">
 							<Image src={img2} alt="img" width={50} height={50} />
 						</div>
-						<h3 className="text-lg md:text-xl font-bold text-[24px] md:text-[30px] font-medium leading-[36px] md:leading-[42px]">
+						<h3 className="text-lg md:text-xl font-bold text-[24px] md:text-[30px] font-medium leading-[28px] md:leading-[32px]">
 							Payroll <br /> Management
 						</h3>
 						<p className="text-sm md:text-base">We help you manage payroll effectively for your organization.</p>
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 						<div className="rounded-full w-[60px] md:w-[70px] h-[60px] md:h-[70px] flex items-center justify-center bg-[#FEA334]">
 							<Image src={img3} alt="img" width={50} height={50} />
 						</div>
-						<h3 className="text-lg md:text-xl font-bold text-[24px] md:text-[30px] font-medium leading-[36px] md:leading-[42px]">
+						<h3 className="text-lg md:text-xl font-bold text-[24px] md:text-[30px] font-medium leading-[28px] md:leading-[32px]">
 							Employee <br /> Benefits
 						</h3>
 						<p className="text-sm md:text-base">We offer tailored employee benefits packages to meet your needs.</p>

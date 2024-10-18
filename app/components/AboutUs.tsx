@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import aboutImg from "../../assets/images/aboutus.png";
+import Button from "./UI/Button";
+import arrowRightIcon from "../../assets/icons/arrow-right.svg";
 
 const AboutUs: React.FC = () => {
 	return (
-		<section id="about" className="bg-transparent py-28 relative">
+		<section id="about" className="bg-transparent py-16 md:py-28  relative">
 			<div className="max-w-7xl mx-auto px-4 z-10 relative">
 				{/* Flex container for responsiveness */}
 				<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
@@ -17,18 +19,20 @@ const AboutUs: React.FC = () => {
 					<div className="w-full md:w-1/2 px-5">
 						<div className="flex items-center gap-4 mb-4">
 							<div className="w-[100px] md:w-[150px] h-[1px] bg-[#2A2A2A]" />
-							<h2 className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5" style={{ background: "rgba(255, 255, 255, 0.50)" }}>
+							<h2
+								className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5 whitespace-nowrap"
+								style={{ background: "rgba(255, 255, 255, 0.50)" }}>
 								About Us
 							</h2>
 							<div className="w-[100px] md:w-[150px] h-[1px] bg-[#2A2A2A]" />
 						</div>
-						<h1 className="text-3xl md:text-5xl font-semibold leading-[40px] md:leading-[60px] mb-6">
+						<h1 className="text-3xl md:text-5xl font-semibold leading-[40px] md:leading-[60px] md:mb-6">
 							Get to Know Us <span className="text-gd">Better</span>
 						</h1>
 						<p className="text-base md:text-lg mb-6">
-							Applyfier was founded in 2020 to match the right talent globally with companies. Founded with a vision to redefine the way individuals
-							connect with career paths and organizations build their dream teams, our journey is woven with the stories of countless professionals
-							and businesses that have found success through collaboration.
+							<span className="logo">maHR</span> was founded in 2023 to match the right talent globally with companies. Founded with a vision to
+							redefine the way individuals connect with career paths and organizations build their dream teams, our journey is woven with the stories
+							of countless professionals and businesses that have found success through collaboration.
 						</p>
 
 						<div className="flex flex-col justify-around gap-10">
@@ -41,6 +45,11 @@ const AboutUs: React.FC = () => {
 								<p>To be the leading HR service provider globally, transforming how organizations manage talent.</p>
 							</div>
 						</div>
+
+						<Button className="flex gap-3 items-center mt-10">
+							<span className="text-base font-medium text-white">Start Here</span>
+							<Image src={arrowRightIcon} width={16} height={16} alt="arrow right icon" />
+						</Button>
 					</div>
 				</div>
 			</div>

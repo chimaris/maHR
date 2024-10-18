@@ -8,7 +8,9 @@ type Props = {
 const Button = ({ children, className }: Props) => {
 	return (
 		<button
-			className={`bg-[#0056B3] rounded-[50px] py-3 px-5 text-white hover:bg-blue-600 transition text-base font-medium ${className && className}`}>
+			className={`bg-[#0056B3] rounded-[50px] py-2 px-4 md:py-3 md:px-5 text-sm md:text-base text-white hover:bg-blue-600 transition font-medium whitespace-nowrap ${
+				className ? className : ""
+			}`}>
 			{children}
 		</button>
 	);
