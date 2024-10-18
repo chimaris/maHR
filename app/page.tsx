@@ -1,101 +1,122 @@
-import Image from "next/image";
+import { NextPage } from "next";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+const Home: NextPage = () => {
+	return (
+		<>
+			<Navbar />
+			<HeroSection />
+			<AboutUs />
+			<Services />
+			<Footer />
+		</>
+	);
+};
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}
+export default Home;
+
+// import { FC } from "react";
+// import Head from "next/head";
+
+// const Home: FC = () => {
+// 	return (
+// 		<>
+// 			<Head>
+// 				<title>Applyfier Landing Page</title>
+// 			</Head>
+
+// 			<div className="min-h-screen bg-gradient-to-br from-blue-light via-white to-slate-dark text-slate-light">
+// 				{/* Header Section */}
+// 				<header className="bg-white shadow-lg">
+// 					<div className="container mx-auto p-5 flex justify-between items-center">
+// 						{/* Logo */}
+// 						<div>
+// 							<img src="/images/applyfier-logo.svg" alt="Applyfier" className="h-8" />
+// 						</div>
+// 						{/* Nav */}
+// 						<nav className="hidden md:flex space-x-6">
+// 							<a href="#features" className="hover:text-blue-dark">
+// 								Features
+// 							</a>
+// 							<a href="#about" className="hover:text-blue-dark">
+// 								About Us
+// 							</a>
+// 							<a href="#pricing" className="hover:text-blue-dark">
+// 								Pricing
+// 							</a>
+// 							<a href="#blog" className="hover:text-blue-dark">
+// 								Blog
+// 							</a>
+// 						</nav>
+// 						{/* Call to Action */}
+// 						<div>
+// 							<button className="bg-blue-light hover:bg-blue-dark text-white py-2 px-4 rounded-full transition-colors">Sign Up</button>
+// 						</div>
+// 					</div>
+// 				</header>
+
+// 				{/* Hero Section */}
+// 				<section className="container mx-auto text-center py-20">
+// 					<h1 className="text-5xl font-bold text-blue-dark mb-6">Uplift Your Hiring with Applyfier</h1>
+// 					<p className="text-lg text-slate-light mb-6">
+// 						Our platform is more than a hiring tool, it's a dynamic space where talent discovery meets analytics and smart team performance.
+// 					</p>
+// 					<button className="bg-blue-dark hover:bg-blue-light text-white py-3 px-6 rounded-full transition-colors">Get Started</button>
+// 				</section>
+
+// 				{/* Features Section */}
+// 				<section id="features" className="bg-gradient-to-br from-white via-blue-light to-slate-light py-16">
+// 					<div className="container mx-auto text-center">
+// 						<h2 className="text-4xl font-bold mb-12">Easy Implementation in Three Easy Steps</h2>
+// 						<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+// 							<div className="p-6 bg-white rounded-xl shadow-lg">
+// 								<img src="/images/analytics.svg" alt="Real-time Analytics" className="h-12 mx-auto mb-4" />
+// 								<h3 className="text-2xl font-semibold mb-2">Real-time Analytics</h3>
+// 								<p>Make data-driven decisions with our comprehensive real-time analytics tool.</p>
+// 							</div>
+// 							<div className="p-6 bg-white rounded-xl shadow-lg">
+// 								<img src="/images/candidate-ranking.svg" alt="Automated Candidate Ranking" className="h-12 mx-auto mb-4" />
+// 								<h3 className="text-2xl font-semibold mb-2">Automated Candidate Ranking</h3>
+// 								<p>Our system evaluates and ranks candidates automatically based on your criteria.</p>
+// 							</div>
+// 							<div className="p-6 bg-white rounded-xl shadow-lg">
+// 								<img src="/images/integration.svg" alt="Seamless Integration" className="h-12 mx-auto mb-4" />
+// 								<h3 className="text-2xl font-semibold mb-2">Seamless Integration</h3>
+// 								<p>Integrate Applyfier with your existing software for a smooth hiring process.</p>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</section>
+
+// 				{/* Add more sections: About, Testimonials, Blog, Pricing */}
+// 				{/* Example for Blog Section */}
+// 				<section id="blog" className="bg-gradient-to-br from-blue-light via-white to-slate-light py-16">
+// 					<div className="container mx-auto text-center">
+// 						<h2 className="text-4xl font-bold mb-12">From Our Blog</h2>
+// 						<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+// 							<div className="p-6 bg-white rounded-xl shadow-lg">
+// 								<img src="/images/blog-post-1.jpg" alt="Blog Post" className="w-full h-40 object-cover rounded-lg mb-4" />
+// 								<h3 className="text-2xl font-semibold mb-2">Mastering the Art of Resume Crafting</h3>
+// 								<p>Learn the secrets to making your resume stand out and land that dream job...</p>
+// 							</div>
+// 							{/* Add more blog items */}
+// 						</div>
+// 					</div>
+// 				</section>
+
+// 				{/* Footer Section */}
+// 				<footer className="bg-slate-dark text-white py-8">
+// 					<div className="container mx-auto text-center">
+// 						<p>© 2024 Applyfier. All Rights Reserved.</p>
+// 					</div>
+// 				</footer>
+// 			</div>
+// 		</>
+// 	);
+// };
+
+// export default Home;
