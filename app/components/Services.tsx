@@ -21,7 +21,7 @@ const Services: React.FC = () => {
 		<section id="services" className="py-20 relative">
 			<div className="max-w-7xl mx-auto text-center px-4 container z-10 relative">
 				{/* Section Title */}
-				<div className="flex items-center gap-4 justify-center">
+				<div className="flex items-center gap-2 md:gap-4 justify-center">
 					<div className="w-[80px] md:w-[180px] h-[1px] bg-[#2A2A2A]" />
 					<h2 className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5 whitespace-nowrap" style={{ background: "rgba(255, 255, 255, 0.50)" }}>
 						Our Services

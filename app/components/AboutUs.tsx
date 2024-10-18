@@ -13,13 +13,13 @@ const AboutUs: React.FC = () => {
 
 	return (
 		<section id="about" className="bg-transparent py-16 md:py-28 relative">
-			<div className="max-w-7xl mx-auto px-4 z-10 relative container">
+			<div className="max-w-7xl mx-auto md:px-4 z-10 relative container">
 				<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10" ref={ref}>
 					<motion.div
 						initial={{ x: -100, opacity: 0 }}
 						animate={isInView ? { x: 0, opacity: 1 } : {}}
 						transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 100 }}
-						className="w-full md:w-1/2">
+						className="w-full md:w-1/2 px-4 md:px-0">
 						<Image src={aboutImg} width={506} height={609} alt="hero image" className="w-full h-auto" />
 					</motion.div>
 
@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
 						animate={isInView ? { x: 0, opacity: 1 } : {}}
 						transition={{ duration: 0.6, delay: 0.3, type: "spring", stiffness: 100 }}
 						className="w-full md:w-1/2 px-5">
-						<div className="flex items-center gap-4 mb-4">
+						<div className="flex items-center gap-2 md:gap-4 mb-4">
 							<div className="w-[100px] md:w-[150px] h-[1px] bg-[#2A2A2A]" />
 							<h2
 								className="text-[16px] md:text-[20px] rounded-[20px] py-2 px-5 whitespace-nowrap"
@@ -40,7 +40,7 @@ const AboutUs: React.FC = () => {
 						<h1 className="text-2xl md:text-4xl font-semibold leading-[40px] md:leading-[60px] md:mb-6">
 							Get to Know Us <span className="text-gd">Better</span>
 						</h1>
-						<p className="text-base md:text-lg mb-6">
+						<p className="text-base md:text-lg mb-6 text-justify">
 							<span className="logo">maHR</span> consulting was founded in 2023 to match the right talent globally with companies. Founded with a
 							vision to redefine the way individuals connect with career paths and organizations build their dream teams, our journey is woven with
 							the stories of countless professionals and businesses that have found success through collaboration.
