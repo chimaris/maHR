@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
 	return (
-		<div className="background">
+		<div className="background overflow-hidden">
 			<Navbar />
 			<HeroSection />
 			<AboutUs />

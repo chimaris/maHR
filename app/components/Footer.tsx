@@ -6,8 +6,8 @@ import lady from "../../assets/images/lady.png";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="bg-transparent py-6">
-			<div className="max-w-7xl mx-auto px-4">
+		<footer className="bg-transparent py-6 relative">
+			<div className="max-w-7xl mx-auto px-4 z-10 relative">
 				<div className="rounded-[20px] py-10 px-20 relative" style={{ background: "rgba(255, 255, 255, 0.5)" }}>
 					<p className="text-[32px] font-medium text-[#000]">
 						Try Applyfier for free during 14-day with <br />
@@ -27,6 +27,7 @@ const Footer: React.FC = () => {
 					</p>
 				</div>
 			</div>
+			<div className="rectangle-12 bottom-0 right-0 absolute z-0" />
 		</footer>
 	);
 };
