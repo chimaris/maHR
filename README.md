@@ -1,12 +1,10 @@
 # MaHR Consulting Landing Page
 
-Created an engaging human resource landing page using Next.js. The page included the following key features: a Navbar, a Hero Section, an About Us section detailing our mission and vision, a Services section, and a Footer.
+I created an engaging human resource landing page using Next.js. The page included the following key features: a Navbar, a Hero Section, an About Us section detailing our mission and vision, a Services section, and a Footer.
 
 I utilized a color palette of blue, white, and slate for a fresh and modern look, and also make it responsive across all devices.
 
-
 <img src="https://github.com/user-attachments/assets/3a43d14d-d2ca-4c35-9ba8-2b7408099f82" width=40% height=40%>
-
 
 ## Prerequisites
 
