@@ -114,6 +114,11 @@
 	filter: blur(250px);
 }
 
+img[alt="MaHR hero view"] {
+	max-width: 50%;
+	max-height: 50%;
+}
+
 /* on mobile view */
 
 @media (max-width: 640px) {
